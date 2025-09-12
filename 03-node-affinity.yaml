@@ -7,13 +7,14 @@ spec:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
-          - key: hardware
-            operator: In 
-            value: 
-             - gpu
+        - matchExpressions:
+            - key: hardware
+              operator: In 
+              value: 
+                - gpu
   containers:
     - name: affinity-demo 
       image: nginx
-      
+
 
            
