@@ -9,3 +9,14 @@ spec:
      imagePullPolicy: Always
   nodeSelector:
      disktype: ssd 
+  tolerations:
+     - key1: "key1"
+       operator: "Equal"
+       value1: "value1"
+       effect: "NoSchedule"
+     - key2: "key1"
+       operator: "Equal"
+       value1: "value1"
+       effect: "NoExecute"
+
+
